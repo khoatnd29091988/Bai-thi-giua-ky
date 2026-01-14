@@ -1,3 +1,4 @@
+#Code game Oan tu ti
 import socket
 
 HOST = '127.0.0.1'
@@ -56,3 +57,4 @@ def start_client():
 
 if __name__ == "__main__":
     start_client()
+
