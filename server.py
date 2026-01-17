@@ -1,6 +1,9 @@
 #Code game Oan tu ti
+# Nhóm 3
+# 1/ Thái Nguyễn Đăng Khoa
 import socket
 import threading
+import time
 
 HOST = '127.0.0.1'
 PORT = 65432
@@ -54,6 +57,7 @@ def handle_game(conn1, conn2):
             else: # winner == 2
                 conn1.send((res_p1 + "BẠN THUA!").encode('utf-8'))
                 conn2.send((res_p2 + "BẠN THẮNG!").encode('utf-8'))
+            time.sleep(4)
 
     except Exception as e:
         print("Lỗi kết nối:", e)
@@ -90,4 +94,6 @@ def start_server():
 
 if __name__ == "__main__":
     start_server()
+
+
 
