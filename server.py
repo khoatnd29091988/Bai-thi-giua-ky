@@ -2,6 +2,7 @@
 # Nhóm 3
 # 1/ Thái Nguyễn Đăng Khoa
 # 2/ Trượng Lệ Hào
+# 3/ Vũ Mạnh Cường
 import socket
 import threading
 import time
@@ -66,7 +67,7 @@ def handle_game(conn1, conn2):
         conn1.close()
         conn2.close()
         print("Kết thúc ván đấu.")
-
+# kết nối server 
 def start_server():
     server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     server.bind((HOST, PORT))
@@ -95,6 +96,7 @@ def start_server():
 
 if __name__ == "__main__":
     start_server()
+
 
 
 
