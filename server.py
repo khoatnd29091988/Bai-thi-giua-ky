@@ -1,6 +1,7 @@
 #Code game Oan tu ti
 # Nhóm 3
 # 1/ Thái Nguyễn Đăng Khoa
+# 2/ Trượng Lệ Hào
 import socket
 import threading
 import time
@@ -94,6 +95,7 @@ def start_server():
 
 if __name__ == "__main__":
     start_server()
+
 
 
 
